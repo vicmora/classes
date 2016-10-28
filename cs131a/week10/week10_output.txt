@@ -1,0 +1,17 @@
+/Users/victormora/Documents/dev/cs131a/week10/site/config.yml
+/Users/victormora/Documents/dev/cs131a/week10/site/index.py
+/Users/victormora/Documents/dev/cs131a/week10/site/app/controllers/posts_controller.py
+/Users/victormora/Documents/dev/cs131a/week10/site/app/controllers/users_controller.py
+/Users/victormora/Documents/dev/cs131a/week10/site/app/models/post.py
+/Users/victormora/Documents/dev/cs131a/week10/site/app/models/user.py
+/Users/victormora/Documents/dev/cs131a/week10/site/app/views/layouts/application.html
+/Users/victormora/Documents/dev/cs131a/week10/site/app/views/users/account.html
+/Users/victormora/Documents/dev/cs131a/week10/site/app/views/users/index.html
+/Users/victormora/Documents/dev/cs131a/week10/site/app/views/users/signin.html
+/Users/victormora/Documents/dev/cs131a/week10/site/config/routes.py
+/Users/victormora/Documents/dev/cs131a/week10/site/db/site_db.sqlite
+/Users/victormora/Documents/dev/cs131a/week10/site/db/site_db.sqlite3
+/Users/victormora/Documents/dev/cs131a/week10/site/log/access_log.txt
+/Users/victormora/Documents/dev/cs131a/week10/site/log/error_log.txt
+/Users/victormora/Documents/dev/cs131a/week10/site/public/stylesheets/style.css
+[Finished in 0.1s]

@@ -1,0 +1,6 @@
+A circle with radius 5 has an area of 78.54 and a circumference of 31.42
+36.99999999999999
+None
+68.0
+None
+[Finished in 0.4s]
