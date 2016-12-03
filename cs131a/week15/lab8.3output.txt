@@ -1,0 +1,15 @@
+1    Hurricane Jelly Beans    jelly beans              abc123    1    
+2    Typhoon Model Boat       plastic model boat       abc456    12   
+3    Supermarine Spitfire     plastic model airplane   bcd123    3    
+4    ENIAC                    model of first computer  bcd456    21   
+5    Queso Fresco             cheese                   CH33S3    5    
+6    French Fries             french fries             FR135     3    
+7    Enpitsu                  Japanese pencil          P3NC1L    15   
+8    Fancy Pen                pen                      P3N       23   
+9    Glasses                  bifocals                 GL4SS3S   1    
+10   Lentes                   glasses                  L3NT35    2    
+11   Coracao                  Portuguese Heart         H34RT     8    
+12   Anaconda                 tons of packages         C0ND4     1000 
+13   Python                   snake                    5N4K3     99   
+14   Frijoles                 beans                    B34N5     64   
+[Finished in 0.3s]
