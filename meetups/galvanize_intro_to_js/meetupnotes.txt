@@ -1,0 +1,12 @@
+Andrew Fitch
+andrewfitch@galvanize.com
+
+Eve Porcello
+eve@moonhighway.com
+github.com/moonhighway/javascript-kickoff
+
+JavaScript Primitives
+Arrays
+Objects
+Functions + Events
+
