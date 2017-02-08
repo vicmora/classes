@@ -1,9 +1,9 @@
 table {
 	box-shadow: 0px 5px 5px 5px #888888;
-	margin-top: 40px;
+	margin-top: 30px;
 	margin-left: auto; 
     margin-right: auto;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 }
 
 table, th, td {
@@ -30,9 +30,9 @@ h1 {
 	margin-top: 10px;
 	margin-bottom: 0px;
 	margin-left: 20px;
-	display: inline-block;
 	color: #003594;
 	font-size: 40px;
+	text-align: center;
 }
 
 p {
@@ -44,11 +44,21 @@ body {
 	font-size: 14px;
 	margin-left: 0px;
 	margin-right: 0px;
+	margin-top: 0px;
 	background-color: #F2F2F2;
+
 }
 
 footer {
 	text-align: center;
 	margin-left: auto;
 	margin-right: auto;
+}
+
+#navigation {
+	margin-top: 0px;
+}
+
+#bottom {
+	text-align: center;
 }
