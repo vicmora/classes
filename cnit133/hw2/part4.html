@@ -50,9 +50,9 @@
 			<script type="text/javascript">
 				for(var i=1; i<7; i++) {
 					document.write('<tr>')
-					document.write('<td>'+i+'</td>')
-					document.write('<td>'+i**2+'</td>')
-					document.write('<td>'+i**3+'</td>')
+					document.write('<td>'+i.toString()+'</td>')
+					document.write('<td>'+Math.pow(i, 2).toString()+'</td>')
+					document.write('<td>'+Math.pow(i, 3).toString()+'</td>')
 					document.write('</tr>')
 				}
 			</script>
@@ -76,9 +76,9 @@
 		document.write('<tbody>');
 		for(var i=7; i<11; i++) {
 			document.write('<tr>');
-			document.write('<td>'+i+'</td>');
-			document.write('<td>'+i**2+'</td>');
-			document.write('<td>'+i**3+'</td>');
+			document.write('<td>'+i.toString()+'</td>');
+			document.write('<td>'+Math.pow(i, 2).toString()+'</td>');
+			document.write('<td>'+Math.pow(i, 3).toString()+'</td>');
 			document.write('</tr>');
 		}
 		document.write('</tbody>');
