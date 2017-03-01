@@ -39,6 +39,10 @@ p {
 	display: inline;
 }
 
+div {
+	text-align: center;
+}
+
 body {
 	font-family: Arial,sans-serif;
 	font-size: 14px;
@@ -71,4 +75,13 @@ footer {
 #panel {
     padding: 50px;
     display: none;
+}
+
+#warningMessage {
+	text-align: center;
+	color: red;
+}
+
+.salesInput {
+	text-align: right;
 }

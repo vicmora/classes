@@ -3,6 +3,9 @@
 <head>
 	<title>CNIT 133 Homework 3 - Part 3</title>
 	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script type="text/javascript" src="../js/hw3.js"></script>
 </head>
 <body>
 
@@ -40,6 +43,60 @@
 </nav>
 
 <h1>CNIT 133 Homework 3 - Part 3</h1>
+
+<div id="warningMessage"></div>
+
+<form id="formCredit">
+	<table>
+		<thead>
+			<tr>
+				<th colspan="2">Monthly Credit Report</th>
+			</tr>	
+		</thead>
+		<tbody>
+			<tr>
+				<td>Account Number</td>
+				<td>
+					<input type="text" name="accNumber">
+				</td>
+			</tr>
+			<tr>
+				<td>Beginning Balance</td>
+				<td>
+					<input type="text" name="bgnBal">
+				</td>
+			</tr>
+			<tr>
+				<td>Amount Charged</td>
+				<td>
+					<input type="text" name="amtCharged">
+				</td>
+			</tr>
+			<tr>
+				<td>Credit Applied</td>
+				<td>
+					<input type="text" name="crApplied">
+				</td>
+			</tr>
+			<tr>
+				<td>Credit Limit</td>
+				<td>
+					<input type="text" name="crLimit">
+				</td>
+			</tr>
+		</tbody>
+	</table>
+
+	<div id="bottom">
+		<input type="button" onclick="credit()" value="Calculate">
+		<input type="reset" name="Reset">
+		<br><br>
+		Results:<br>
+		<textarea name="result" rows="10" cols="40" id="result"></textarea><br>
+		<input type="button" name="changeButton" id="changeButton" value="Click to Change Textarea Display">
+		<br><br>
+	</div>
+</form>
 
 <footer>
 	<p>

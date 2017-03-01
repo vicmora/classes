@@ -3,6 +3,9 @@
 <head>
 	<title>CNIT 133 Homework 3 - Part 2</title>
 	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script type="text/javascript" src="../js/hw3.js"></script>
 </head>
 <body>
 
@@ -39,7 +42,101 @@
 	</table>
 </nav>
 
-<h1>CNIT 133 Homework 3 - Part 2</h1>
+<h1>CNIT 133 Homework 3 - Part 2 - Sales</h1>
+
+<div id="warningMessage"></div>
+
+<br>
+<div>
+	Name: <input type="text" name="salesPerson" title="Please make sure that the salesperson's name is spelled correctly.">
+</div>
+
+<form id="formSales">
+	<table>
+		<thead>
+			<tr>
+				<th colspan="2">Weekly Sales</th>
+			</tr>	
+		</thead>
+		<tbody>
+			<tr>
+				<td>Item 1:</td>
+				<td>
+					<input type="text" name="item1" class="salesInput">
+				</td>
+			</tr>
+			<tr>
+				<td>Item 2:</td>
+				<td>
+					<input type="text" name="item2" class="salesInput">
+				</td>
+			</tr>
+			<tr>
+				<td>Item 3:</td>
+				<td>
+					<input type="text" name="item3" class="salesInput">
+				</td>
+			</tr>
+			<tr>
+				<td>Item 4:</td>
+				<td>
+					<input type="text" name="item4" class="salesInput">
+				</td>
+			</tr>		
+		</tbody>
+	</table>
+
+	<div id="bottom">
+		<input type="button" onclick="sales()" value="Calculate">
+		<input type="reset" name="Reset">
+	</div>
+
+</form>
+
+<table>
+	<thead>
+		<tr>
+			<th>Item</th>
+			<th>Price</th>
+			<th>Quantity Sold</th>
+			<th>Total Amount</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>1</td>
+			<td>$239.99</td>
+			<td><input type="text" name="numSold1" id="numSold1"></td>
+			<td><input type="text" name="totalSold1" id="totalSold1"></td>
+		</tr>
+		<tr>
+			<td>2</td>
+			<td>$129.75</td>
+			<td><input type="text" name="numSold2" id="numSold2"></td>
+			<td><input type="text" name="totalSold2" id="totalSold2"></td>
+		</tr>
+		<tr>
+			<td>3</td>
+			<td>$99.95</td>
+			<td><input type="text" name="numSold3" id="numSold3"></td>
+			<td><input type="text" name="totalSold3" id="totalSold3"></td>
+		</tr>
+		<tr>
+			<td>4</td>
+			<td>$350.89</td>
+			<td><input type="text" name="numSold4" id="numSold4"></td>
+			<td><input type="text" name="totalSold4" id="totalSold4"></td>
+		</tr>
+		<tr>
+			<td colspan="3">Total Amount Sold:</td>
+			<td><input type="text" name="totalSold" id="totalSold"></td>
+		</tr>
+		<tr>
+			<td colspan="3">Total Weekly Earnings:</td>
+			<td><input type="text" name="totalEarnings" id="totalEarnings"></td>
+		</tr>
+	</tbody>
+</table>
 
 <footer>
 	<p>
