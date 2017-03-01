@@ -3,8 +3,12 @@
 <head>
 	<title>CNIT 133 Homework 3 - Part 6</title>
 	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<link rel="stylesheet" href="http://code.jquery.com/ui/1.11.1/themes/smoothness/jquery-ui.css">
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="http://code.jquery.com/ui/1.11.1/jquery-ui.js"></script>
+	<script type="text/javascript" src="../js/hw3.js"></script>
 </head>
-<body>
+<body onload="getNumbers()">
 
 <nav>
 	<table id="navigation">
@@ -40,6 +44,32 @@
 </nav>
 
 <h1>CNIT 133 Homework 3 - Part 6</h1>
+
+<form id="formMult">
+	<table>
+		<thead>
+			<tr>
+				<th colspan="2">Multiplication Bank</th>
+			</tr>	
+		</thead>
+		<tbody>
+			<tr>
+				<td id="question"></td>
+				<td>
+					<input type="text" name="answer">
+				</td>
+			</tr>
+		</tbody>
+	</table>
+
+	<div id="bottom">
+		<input type="button" onclick="checkAnswer()" value="Check Answer">
+		<br><br>
+	</div>
+</form>
+
+<div id="outputMessage"></div>
+<br><br>
 
 <footer>
 	<p>

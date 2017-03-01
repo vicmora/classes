@@ -149,6 +149,125 @@ function credit() {
 	frm.elements["result"].value = res;
 }
 
+function palindrome() {
+	var frm = document.forms["formPalindrome"];
+	var intInput = frm.elements["intInput"].value;
+
+	// Parse string to integer in order to check that it is an integer.
+	var iInput = parseInt(intInput);
+
+	// Check to confirm input is integer.
+	var arr = [iInput];
+	var intStatus = validateNumbers(arr);
+
+	// Check to make sure the input is 5 digits in length.
+	var lenStatus;
+	if( intInput.length !== 5 ) {
+		lenStatus = "invalid";
+	}
+
+	// Check to make sure the input is a palindrome.
+	var intReverse = intInput.split('').reverse().join('');
+	
+	var palStatus;
+	if( intInput !== intReverse ) {
+		palStatus = "invalid";
+	}
+
+	// If any check doesn't pass, output an error message else output a success message.
+	if( intStatus === "invalid" || lenStatus === "invalid" ) {
+		document.getElementById("outputMessage").innerHTML = "Invalid input. Please enter a 5-digit integer.";
+	}
+	else if( palStatus === "invalid" ) {
+		document.getElementById("outputMessage").innerHTML = "The integer is not a palindrome.";
+	}
+	else {
+		document.getElementById("outputMessage").innerHTML = "Success! The integer is a palindrome.";
+	}
+
+}
+
+function temperature(metric) {
+	var frm = document.forms["formTemp"];
+	var tempInput = frm.elements["tempInput"].value;
+
+	// Parse string to integer in order to check that it is an integer.
+	tempInput = parseFloat(tempInput);
+
+	// Check to confirm input is integer.
+	var arr = [tempInput];
+	var floatStatus = validateNumbers(arr);
+
+	var tempConverted;
+	var msg;
+	if( metric === "celsius" ) {
+		tempConverted = (9/5 * tempInput) + 32;
+		msg = tempInput + " celsius is equivalent to " + tempConverted.toFixed(0) + " fahrenheit.";
+	}
+	else if( metric === "fahrenheit" ) {
+		tempConverted = (5/9) * (tempInput - 32);
+		msg = tempInput + " fahrenheit is equivalent to " + tempConverted.toFixed(0) + " celsius.";
+	}
+
+	// If any check doesn't pass, output an error message else output a success message.
+	if( floatStatus === "invalid") {
+		document.getElementById("outputMessage").innerHTML = "Invalid input. Please enter a number.";
+	}
+	else {
+		document.getElementById("outputMessage").innerHTML = msg;
+	}
+
+}
+
+var correctAnswer, x, y;
+function getNumbers() {
+	x = Math.round(Math.random() * 10);
+	y = Math.round(Math.random() * 10);
+
+	var question = "What is " + x + " times " + y + "?"
+
+	document.getElementById("question").innerHTML = question;
+
+	correctAnswer = x * y;
+}
+
+function checkAnswer() {
+	var frm = document.forms["formMult"];
+	var answer = frm.elements["answer"].value;
+
+	// Parse string to float.
+	answer = parseFloat(answer);
+
+	// Check to confirm input is a float.
+	var arr = [answer];
+	var floatStatus = validateNumbers(arr);
+
+	var answerStatus;
+	var msg;
+	if( answer === correctAnswer ) {
+		answerStatus = "valid";
+		msg = "Very good! " + x + " times " + y + " is " + correctAnswer;
+	}
+	else {
+		answerStatus = "invalid";
+		msg = "Incorrect. Please try again.";
+	}
+
+	// If any check doesn't pass, output an error message else output a success message.
+	if( floatStatus === "invalid") {
+		document.getElementById("outputMessage").innerHTML = "Invalid input. Please enter a number.";
+	}
+	else if ( answerStatus === "invalid" ) {
+		document.getElementById("outputMessage").innerHTML = msg;
+	}
+	else {
+		document.getElementById("outputMessage").innerHTML = msg;
+		document.getElementById("formMult").reset();
+		getNumbers();
+	}
+}
+
+
 $(document).ready(function(){
     $("#flip").click(function(){
         $("#panel").slideToggle("slow");
@@ -169,3 +288,24 @@ $(document).ready(function(){
         });
     });
 });
+ 
+$(function() {
+	$( "#dialog" ).dialog({
+		autoOpen: false,
+		show: {
+		effect: "blind",
+		duration: 100
+		},
+
+		hide: {
+		effect: "fade",
+		duration: 100
+		}
+	});
+
+	$( "#opener" ).click(function() {
+		$( "#dialog" ).dialog( "open" );
+	});
+});
+
+

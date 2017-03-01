@@ -3,6 +3,10 @@
 <head>
 	<title>CNIT 133 Homework 3 - Part 4</title>
 	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<link rel="stylesheet" href="http://code.jquery.com/ui/1.11.1/themes/smoothness/jquery-ui.css">
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="http://code.jquery.com/ui/1.11.1/jquery-ui.js"></script>
+	<script type="text/javascript" src="../js/hw3.js"></script>
 </head>
 <body>
 
@@ -40,6 +44,43 @@
 </nav>
 
 <h1>CNIT 133 Homework 3 - Part 4</h1>
+
+<div>
+	<br>
+	<button id="opener">Click for Instructions</button>
+</div>
+
+<div id="dialog">
+	<p>Input a five-digit integer (not starting with zero) to display if it is a palindrome,
+		not a palindrome, or an input error.</p>
+</div>
+
+<form id="formPalindrome">
+	<table>
+		<thead>
+			<tr>
+				<th colspan="2">Palindrome Check</th>
+			</tr>	
+		</thead>
+		<tbody>
+			<tr>
+				<td>Enter a 5-digit Integer:</td>
+				<td>
+					<input type="text" name="intInput">
+				</td>
+			</tr>
+		</tbody>
+	</table>
+
+	<div id="bottom">
+		<input type="button" onclick="palindrome()" value="Calculate">
+		<input type="reset" name="Reset">
+		<br><br>
+	</div>
+</form>
+
+<div id="outputMessage"></div>
+<br><br>
 
 <footer>
 	<p>
