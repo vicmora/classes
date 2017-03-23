@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>CNIT 133 Homework 3 - Part 2</title>
+	<title>CNIT 133 Homework 4 - Part 2</title>
 	<link rel="stylesheet" type="text/css" href="../css/style.css">
 	<link rel="stylesheet" href="https://code.jquery.com/ui/1.11.1/themes/smoothness/jquery-ui.css">
 	<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
 	<script src="https://code.jquery.com/ui/1.11.1/jquery-ui.js"></script>
-	<script type="text/javascript" src="../js/hw3.js"></script>
+	<script type="text/javascript" src="../js/hw4.js" defer></script>
 <body>
 
 <nav>
@@ -42,101 +42,70 @@
 	</table>
 </nav>
 
-<h1>CNIT 133 Homework 3 - Part 2 - Sales</h1>
+<h1>CNIT 133 Homework 4 - Part 2 - Pay</h1>
 
-<div id="warningMessage"></div>
-
-<br>
-<div>
-	Name: <input type="text" name="salesPerson" title="Please make sure that the salesperson's name is spelled correctly.">
-</div>
-
-<form id="formSales">
+<form name="formPay">
 	<table>
 		<thead>
 			<tr>
-				<th colspan="2">Weekly Sales</th>
-			</tr>	
+				<th>Employee</th>
+				<th>Hours</th>
+				<th>Hourly Rate</th>
+			</tr>
 		</thead>
 		<tbody>
 			<tr>
-				<td>Item 1:</td>
-				<td>
-					<input type="text" name="item1" class="salesInput">
-				</td>
+				<td>1</td>
+				<td><input type="text" name="hrs1"></td>
+				<td><input type="text" name="rt1"></td>
 			</tr>
 			<tr>
-				<td>Item 2:</td>
-				<td>
-					<input type="text" name="item2" class="salesInput">
-				</td>
+				<td>2</td>
+				<td><input type="text" name="hrs2"></td>
+				<td><input type="text" name="rt2"></td>
 			</tr>
 			<tr>
-				<td>Item 3:</td>
-				<td>
-					<input type="text" name="item3" class="salesInput">
-				</td>
+				<td>3</td>
+				<td><input type="text" name="hrs3"></td>
+				<td><input type="text" name="rt3"></td>
 			</tr>
 			<tr>
-				<td>Item 4:</td>
-				<td>
-					<input type="text" name="item4" class="salesInput">
-				</td>
-			</tr>		
+				<td>4</td>
+				<td><input type="text" name="hrs4"></td>
+				<td><input type="text" name="rt4"></td>
+			</tr>
+			<tr>
+				<td>5</td>
+				<td><input type="text" name="hrs5"></td>
+				<td><input type="text" name="rt5"></td>
+			</tr>
+			<tr>
+				<td>6</td>
+				<td><input type="text" name="hrs6"></td>
+				<td><input type="text" name="rt6"></td>
+			</tr>
 		</tbody>
 	</table>
-
-	<div id="bottom">
-		<input type="button" onclick="sales()" value="Calculate">
-		<input type="reset" name="Reset">
+	<div>
+		<input type="button" value="Submit">
+		<input type="reset" value="Reset">
 	</div>
+</table>
 
-</form>
 
 <table>
-	<thead>
-		<tr>
-			<th>Item</th>
-			<th>Price</th>
-			<th>Quantity Sold</th>
-			<th>Total Amount</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td>1</td>
-			<td>$239.99</td>
-			<td><input type="text" name="numSold1" id="numSold1"></td>
-			<td><input type="text" name="totalSold1" id="totalSold1"></td>
-		</tr>
-		<tr>
-			<td>2</td>
-			<td>$129.75</td>
-			<td><input type="text" name="numSold2" id="numSold2"></td>
-			<td><input type="text" name="totalSold2" id="totalSold2"></td>
-		</tr>
-		<tr>
-			<td>3</td>
-			<td>$99.95</td>
-			<td><input type="text" name="numSold3" id="numSold3"></td>
-			<td><input type="text" name="totalSold3" id="totalSold3"></td>
-		</tr>
-		<tr>
-			<td>4</td>
-			<td>$350.89</td>
-			<td><input type="text" name="numSold4" id="numSold4"></td>
-			<td><input type="text" name="totalSold4" id="totalSold4"></td>
-		</tr>
-		<tr>
-			<td colspan="3">Total Amount Sold:</td>
-			<td><input type="text" name="totalSold" id="totalSold"></td>
-		</tr>
-		<tr>
-			<td colspan="3">Total Weekly Earnings:</td>
-			<td><input type="text" name="totalEarnings" id="totalEarnings"></td>
-		</tr>
-	</tbody>
+
+<tr><th>Employee</th><th>Hours worked</th><th>Hourly Rate</th><th>Gross Pay</th></tr>
+
+<tr><td>1</td><td><input type="text" name="f_hours1" disabled></td><td><input type="text" name="f_rate1" disabled></td><td><input type="text" name="gross1" disabled></td>
+<tr><td>2</td><td><input type="text" name="f_hours2" disabled></td><td><input type="text" name="f_rate2" disabled></td><td><input type="text" name="gross2" disabled></td>
+<tr><td>3</td><td><input type="text" name="f_hours3" disabled></td><td><input type="text" name="f_rate3" disabled></td><td><input type="text" name="gross3" disabled></td>
+<tr><td>4</td><td><input type="text" name="f_hours4" disabled></td><td><input type="text" name="f_rate4" disabled></td><td><input type="text" name="gross4" disabled></td>
+<tr><td>5</td><td><input type="text" name="f_hours5" disabled></td><td><input type="text" name="f_rate5" disabled></td><td><input type="text" name="gross5" disabled></td>
+<tr><td>6</td><td><input type="text" name="f_hours6" disabled></td><td><input type="text" name="f_rate6" disabled></td><td><input type="text" name="gross6" disabled></td>
 </table>
+</form>
+
 
 <footer>
 	<p>

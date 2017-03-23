@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>CNIT 133 Homework 3 - Part 1 - Student Grades</title>
+	<title>CNIT 133 Homework 4 - Part 1</title>
 	<link rel="stylesheet" type="text/css" href="../css/style.css">
 	<link rel="stylesheet" href="https://code.jquery.com/ui/1.11.1/themes/smoothness/jquery-ui.css">
 	<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
 	<script src="https://code.jquery.com/ui/1.11.1/jquery-ui.js"></script>
-	<script type="text/javascript" src="../js/hw3.js"></script>
+	<script type="text/javascript" src="../js/hw4.js" defer></script>
 </head>
 <body>
 
@@ -43,60 +43,13 @@
 	</table>
 </nav>
 
-<h1>CNIT 133 Homework 3 - Part 1 - Student Grades</h1>
+<h1>CNIT 133 Homework 4 - Part 1 - Calculations</h1>
 
-<div id="flip">Click for Instructions</div>
-<div id="panel">
-	Enter the Student's homework average, mid-term exam score, final exam score, and ACR.
+<div id="draggable">
+	<p><strong>Drag Me!</strong></p><br><br>
+	<div id="calculate_a"></div>
+	<div id="calculate_b"></div>
 </div>
-
-<div id="warningMessage"></div>
-
-<form id="formGrades">
-	<table>
-		<thead>
-			<tr>
-				<th colspan="2">Student Grades</th>
-			</tr>	
-		</thead>
-		<tbody>
-			<tr>
-				<td>Homework Average</td>
-				<td>
-					<input type="text" name="hwAvg">
-				</td>
-			</tr>
-			<tr>
-				<td>Mid-term Exam Score</td>
-				<td>
-					<input type="text" name="midtermScore">
-				</td>
-			</tr>
-			<tr>
-				<td>Final Exam Score</td>
-				<td>
-					<input type="text" name="finalScore">
-				</td>
-			</tr>
-			<tr>
-				<td>ACR</td>
-				<td>
-					<input type="text" name="acr">
-				</td>
-			</tr>	
-		</tbody>
-	</table>
-
-	<div id="bottom">
-		<input type="button" onclick="studentGrade()" value="Calculate">
-		<input type="reset" name="Reset">
-		<br><br>
-		Results:<br>
-		<textarea name="result" rows="5" cols="30"></textarea>
-		<br><br>
-	</div>
-
-</form>
 
 <footer>
 	<p>
