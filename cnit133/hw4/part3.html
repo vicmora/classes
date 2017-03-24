@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>CNIT 133 Homework 3 - Part 3</title>
+	<title>CNIT 133 Homework 4 - Part 3</title>
 	<link rel="stylesheet" type="text/css" href="../css/style.css">
 	<link rel="stylesheet" href="https://code.jquery.com/ui/1.11.1/themes/smoothness/jquery-ui.css">
 	<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
 	<script src="https://code.jquery.com/ui/1.11.1/jquery-ui.js"></script>
-	<script type="text/javascript" src="../js/hw3.js"></script>
+	<script type="text/javascript" src="../js/hw4.js"></script>
 </head>
 <body>
 
@@ -18,7 +18,7 @@
 					<a href="../index.html">Home</a>
 				</td>
 				<td>
-					<a href="index.html">HW 3 Home</a>
+					<a href="index.html">HW 4 Home</a>
 				</td>
 				<td>
 					<a href="part1.html">Part 1</a>
@@ -43,61 +43,83 @@
 	</table>
 </nav>
 
-<h1>CNIT 133 Homework 3 - Part 3</h1>
+<h1>CNIT 133 Homework 4 - Part 3</h1>
 
-<div id="warningMessage"></div>
+<div>
+	What is the compound interest impact on a deposit of $1000?<br><br>
+	<select id="int_rate">
+		<option value=".05" selected>5%</option>
+		<option value=".06">6%</option>
+		<option value=".07">7%</option>
+		<option value=".08">8%</option>
+		<option value=".09">9%</option>
+		<option value=".1">10%</option>
+	</select><br><br>
+	<input type="button" onclick="interest()" value="Submit">
+	<input type="reset" value="Reset">
+</div>
 
-<form id="formCredit">
-	<table>
-		<thead>
-			<tr>
-				<th colspan="2">Monthly Credit Report</th>
-			</tr>	
-		</thead>
-		<tbody>
-			<tr>
-				<td>Account Number</td>
-				<td>
-					<input type="text" name="accNumber">
-				</td>
-			</tr>
-			<tr>
-				<td>Beginning Balance</td>
-				<td>
-					<input type="text" name="bgnBal">
-				</td>
-			</tr>
-			<tr>
-				<td>Amount Charged</td>
-				<td>
-					<input type="text" name="amtCharged">
-				</td>
-			</tr>
-			<tr>
-				<td>Credit Applied</td>
-				<td>
-					<input type="text" name="crApplied">
-				</td>
-			</tr>
-			<tr>
-				<td>Credit Limit</td>
-				<td>
-					<input type="text" name="crLimit">
-				</td>
-			</tr>
-		</tbody>
-	</table>
-
-	<div id="bottom">
-		<input type="button" onclick="credit()" value="Calculate">
-		<input type="reset" name="Reset">
-		<br><br>
-		Results:<br>
-		<textarea name="result" rows="10" cols="40" id="result"></textarea><br>
-		<input type="button" name="changeButton" id="changeButton" value="Click to Change Textarea Display">
-		<br><br>
-	</div>
-</form>
+<table>
+	<thead>
+		<tr>
+			<th>Year</th>
+			<th>Amount on Deposit</th>
+			<th>Interest Rate</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>1</td>
+			<td id="out_1"></td>
+			<td id="ir_1"></td>
+		</tr>
+		<tr>
+			<td>2</td>
+			<td id="out_2"></td>
+			<td id="ir_2"></td>
+		</tr>
+		<tr>
+			<td>3</td>
+			<td id="out_3"></td>
+			<td id="ir_3"></td>
+		</tr>
+		<tr>
+			<td>4</td>
+			<td id="out_4"></td>
+			<td id="ir_4"></td>
+		</tr>
+		<tr>
+			<td>5</td>
+			<td id="out_5"></td>
+			<td id="ir_5"></td>
+		</tr>
+		<tr>
+			<td>6</td>
+			<td id="out_6"></td>
+			<td id="ir_6"></td>
+		</tr>
+		<tr>
+			<td>7</td>
+			<td id="out_7"></td>
+			<td id="ir_7"></td>
+		</tr>
+		<tr>
+			<td>8</td>
+			<td id="out_8"></td>
+			<td id="ir_8"></td>
+		</tr>
+		<tr>
+			<td>9</td>
+			<td id="out_9"></td>
+			<td id="ir_9"></td>
+		</tr>
+		<tr>
+			<td>10</td>
+			<td id="out_10"></td>
+			<td id="ir_10"></td>
+		</tr>
+	</tbody>
+</table>
 
 <footer>
 	<p>

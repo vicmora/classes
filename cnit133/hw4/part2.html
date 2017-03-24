@@ -17,7 +17,7 @@
 					<a href="../index.html">Home</a>
 				</td>
 				<td>
-					<a href="index.html">HW 3 Home</a>
+					<a href="index.html">HW 4 Home</a>
 				</td>
 				<td>
 					<a href="part1.html">Part 1</a>
@@ -44,6 +44,8 @@
 
 <h1>CNIT 133 Homework 4 - Part 2 - Pay</h1>
 
+<div id="warningMessage"></div>
+
 <form name="formPay">
 	<table>
 		<thead>
@@ -56,56 +58,91 @@
 		<tbody>
 			<tr>
 				<td>1</td>
-				<td><input type="text" name="hrs1"></td>
-				<td><input type="text" name="rt1"></td>
+				<td><input type="text" name="in_hrs1" class="rightJustify"></td>
+				<td><input type="text" name="in_rt1" class="rightJustify"></td>
 			</tr>
 			<tr>
 				<td>2</td>
-				<td><input type="text" name="hrs2"></td>
-				<td><input type="text" name="rt2"></td>
+				<td><input type="text" name="in_hrs2" class="rightJustify"></td>
+				<td><input type="text" name="in_rt2" class="rightJustify"></td>
 			</tr>
 			<tr>
 				<td>3</td>
-				<td><input type="text" name="hrs3"></td>
-				<td><input type="text" name="rt3"></td>
+				<td><input type="text" name="in_hrs3" class="rightJustify"></td>
+				<td><input type="text" name="in_rt3" class="rightJustify"></td>
 			</tr>
 			<tr>
 				<td>4</td>
-				<td><input type="text" name="hrs4"></td>
-				<td><input type="text" name="rt4"></td>
+				<td><input type="text" name="in_hrs4" class="rightJustify"></td>
+				<td><input type="text" name="in_rt4" class="rightJustify"></td>
 			</tr>
 			<tr>
 				<td>5</td>
-				<td><input type="text" name="hrs5"></td>
-				<td><input type="text" name="rt5"></td>
+				<td><input type="text" name="in_hrs5" class="rightJustify"></td>
+				<td><input type="text" name="in_rt5" class="rightJustify"></td>
 			</tr>
 			<tr>
 				<td>6</td>
-				<td><input type="text" name="hrs6"></td>
-				<td><input type="text" name="rt6"></td>
+				<td><input type="text" name="in_hrs6" class="rightJustify"></td>
+				<td><input type="text" name="in_rt6" class="rightJustify"></td>
 			</tr>
 		</tbody>
 	</table>
 	<div>
-		<input type="button" value="Submit">
+		<input type="button" onclick="pay()" value="Submit">
 		<input type="reset" value="Reset">
 	</div>
-</table>
+	</table>
 
-
-<table>
-
-<tr><th>Employee</th><th>Hours worked</th><th>Hourly Rate</th><th>Gross Pay</th></tr>
-
-<tr><td>1</td><td><input type="text" name="f_hours1" disabled></td><td><input type="text" name="f_rate1" disabled></td><td><input type="text" name="gross1" disabled></td>
-<tr><td>2</td><td><input type="text" name="f_hours2" disabled></td><td><input type="text" name="f_rate2" disabled></td><td><input type="text" name="gross2" disabled></td>
-<tr><td>3</td><td><input type="text" name="f_hours3" disabled></td><td><input type="text" name="f_rate3" disabled></td><td><input type="text" name="gross3" disabled></td>
-<tr><td>4</td><td><input type="text" name="f_hours4" disabled></td><td><input type="text" name="f_rate4" disabled></td><td><input type="text" name="gross4" disabled></td>
-<tr><td>5</td><td><input type="text" name="f_hours5" disabled></td><td><input type="text" name="f_rate5" disabled></td><td><input type="text" name="gross5" disabled></td>
-<tr><td>6</td><td><input type="text" name="f_hours6" disabled></td><td><input type="text" name="f_rate6" disabled></td><td><input type="text" name="gross6" disabled></td>
-</table>
+	<table>
+		<thead>
+			<tr>
+				<th>Employee</th>
+				<th>Hours</th>
+				<th>Hourly Rate</th>
+				<th>Gross Pay</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>1</td>
+				<td><input type="text" name="out_hrs1" class="rightJustify" disabled></td>
+				<td><input type="text" name="out_rt1" class="rightJustify" disabled></td>
+				<td><input type="text" name="out_pay1" class="rightJustify" disabled></td>
+			</tr>
+			<tr>
+				<td>2</td>
+				<td><input type="text" name="out_hrs2" class="rightJustify" disabled></td>
+				<td><input type="text" name="out_rt2" class="rightJustify" disabled></td>
+				<td><input type="text" name="out_pay2" class="rightJustify" disabled></td>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td><input type="text" name="out_hrs3" class="rightJustify" disabled></td>
+				<td><input type="text" name="out_rt3" class="rightJustify" disabled></td>
+				<td><input type="text" name="out_pay3" class="rightJustify" disabled></td>
+			</tr>
+			<tr>
+				<td>4</td>
+				<td><input type="text" name="out_hrs4" class="rightJustify" disabled></td>
+				<td><input type="text" name="out_rt4" class="rightJustify" disabled></td>
+				<td><input type="text" name="out_pay4" class="rightJustify" disabled></td>
+			</tr>
+			<tr>
+				<td>5</td>
+				<td><input type="text" name="out_hrs5" class="rightJustify" disabled></td>
+				<td><input type="text" name="out_rt5" class="rightJustify" disabled></td>
+				<td><input type="text" name="out_pay5" class="rightJustify" disabled></td>
+			</tr>
+			<tr>
+				<td>6</td>
+				<td><input type="text" name="out_hrs6" class="rightJustify" disabled></td>
+				<td><input type="text" name="out_rt6" class="rightJustify" disabled></td>
+				<td><input type="text" name="out_pay6" class="rightJustify" disabled></td>
+			</tr>
+		</tbody>
+	</table>
 </form>
-
 
 <footer>
 	<p>

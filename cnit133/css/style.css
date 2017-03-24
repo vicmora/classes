@@ -85,3 +85,11 @@ footer {
 .salesInput {
 	text-align: right;
 }
+
+.rightJustify {
+	text-align: right;
+}
+
+.centerInput {
+	text-align: center;
+}

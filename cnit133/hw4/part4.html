@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>CNIT 133 Homework 3 - Part 4</title>
+	<title>CNIT 133 Homework 4 - Part 4</title>
 	<link rel="stylesheet" type="text/css" href="../css/style.css">
 	<link rel="stylesheet" href="https://code.jquery.com/ui/1.11.1/themes/smoothness/jquery-ui.css">
 	<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
 	<script src="https://code.jquery.com/ui/1.11.1/jquery-ui.js"></script>
-	<script type="text/javascript" src="../js/hw3.js"></script>
+	<script type="text/javascript" src="../js/hw4.js"></script>
 </head>
 <body>
 
@@ -18,7 +18,7 @@
 					<a href="../index.html">Home</a>
 				</td>
 				<td>
-					<a href="index.html">HW 3 Home</a>
+					<a href="index.html">HW 4 Home</a>
 				</td>
 				<td>
 					<a href="part1.html">Part 1</a>
@@ -43,44 +43,62 @@
 	</table>
 </nav>
 
-<h1>CNIT 133 Homework 3 - Part 4</h1>
+<h1>CNIT 133 Homework 4 - Part 4</h1>
 
-<div>
-	<br>
-	<button id="opener">Click for Instructions</button>
-</div>
+<div id="warningMessage"></div>
 
-<div id="dialog">
-	<p>Input a five-digit integer (not starting with zero) to display if it is a palindrome,
-		not a palindrome, or an input error.</p>
-</div>
-
-<form id="formPalindrome">
+<form name="formAmount">
 	<table>
 		<thead>
 			<tr>
-				<th colspan="2">Palindrome Check</th>
-			</tr>	
+				<th>Product</th>
+				<th>Quantity</th>
+				<th>Price</th>
+				<th>Amount</th>
+			</tr>
 		</thead>
 		<tbody>
 			<tr>
-				<td>Enter a 5-digit Integer:</td>
-				<td>
-					<input type="text" name="intInput">
-				</td>
+				<td><input type="text" class="centerInput" name="prod1" value="1" disabled></td>
+				<td><input type="text" class="centerInput" name="qty1"></td>
+				<td><input type="text" class="centerInput" name="price1" value="2.98" disabled></td>
+				<td><input type="text" class="centerInput" name="amt1" disabled></td>
+			</tr>
+			<tr>
+				<td><input type="text" class="centerInput" name="prod2" value="2" disabled></td>
+				<td><input type="text" class="centerInput" name="qty2"></td>
+				<td><input type="text" class="centerInput" name="price2" value="4.50" disabled></td>
+				<td><input type="text" class="centerInput" name="amt2" disabled></td>
+			</tr>
+			<tr>
+				<td><input type="text" class="centerInput" name="prod3" value="3" disabled></td>
+				<td><input type="text" class="centerInput" name="qty3"></td>
+				<td><input type="text" class="centerInput" name="price3" value="9.98" disabled></td>
+				<td><input type="text" class="centerInput" name="amt3" disabled></td>
+			</tr>
+			<tr>
+				<td><input type="text" class="centerInput" name="prod4" value="4" disabled></td>
+				<td><input type="text" class="centerInput" name="qty4"></td>
+				<td><input type="text" class="centerInput" name="price4" value="4.49" disabled></td>
+				<td><input type="text" class="centerInput" name="amt4" disabled></td>
+			</tr>
+			<tr>
+				<td><input type="text" class="centerInput" name="prod5" value="5" disabled></td>
+				<td><input type="text" class="centerInput" name="qty5"></td>
+				<td><input type="text" class="centerInput" name="price5" value="6.87" disabled></td>
+				<td><input type="text" class="centerInput" name="amt5" disabled></td>
+			</tr>
+			<tr>
+				<td colspan="3" class="centerInput">Weekly Total Amount Sold:</td>
+				<td><input type="text" class="centerInput" name="amt_total" disabled></td>
 			</tr>
 		</tbody>
 	</table>
-
-	<div id="bottom">
-		<input type="button" onclick="palindrome()" value="Calculate">
-		<input type="reset" name="Reset">
-		<br><br>
-	</div>
 </form>
-
-<div id="outputMessage"></div>
-<br><br>
+<div>
+	<input type="button" onclick="totalAmount()" value="Submit">
+	<input type="reset" value="Reset"><br><br>
+</div>
 
 <footer>
 	<p>
