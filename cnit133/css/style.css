@@ -93,3 +93,9 @@ footer {
 .centerInput {
 	text-align: center;
 }
+
+#christmas {
+	width: 100px;
+	display: block;
+	margin: auto;
+}
