@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>CNIT 133 Homework 3 - Part 5</title>
+	<title>CNIT 133 Homework 4 - Part 5</title>
 	<link rel="stylesheet" type="text/css" href="../css/style.css">
 	<link rel="stylesheet" href="https://code.jquery.com/ui/1.11.1/themes/smoothness/jquery-ui.css">
 	<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
 	<script src="https://code.jquery.com/ui/1.11.1/jquery-ui.js"></script>
-	<script type="text/javascript" src="../js/hw3.js"></script>
+	<script src="https://cdn.jsdelivr.net/jquery.validation/1.15.0/jquery.validate.min.js"></script>
+	<script type="text/javascript" src="../js/hw4.js"></script>
 </head>
 <body>
 
@@ -18,7 +19,7 @@
 					<a href="../index.html">Home</a>
 				</td>
 				<td>
-					<a href="index.html">HW 3 Home</a>
+					<a href="index.html">HW 4 Home</a>
 				</td>
 				<td>
 					<a href="part1.html">Part 1</a>
@@ -43,35 +44,31 @@
 	</table>
 </nav>
 
-<h1>CNIT 133 Homework 3 - Part 5</h1>
+<h1>CNIT 133 Homework 4 - Part 5</h1>
 
-<form id="formTemp">
-	<table>
-		<thead>
-			<tr>
-				<th colspan="2">Temperature Conversion</th>
-			</tr>	
-		</thead>
-		<tbody>
-			<tr>
-				<td>Enter Temperature:</td>
-				<td>
-					<input type="text" name="tempInput">
-				</td>
-			</tr>
-		</tbody>
-	</table>
+<div>
+	<br>
+	<button id="opener">Click for Instructions</button>
+	<br><br>
+</div>
 
-	<div id="bottom">
-		<input type="button" onclick="temperature('celsius')" value="C to F">
-		<input type="button" onclick="temperature('fahrenheit')" value="F to C">
-		<input type="reset" name="Reset">
-		<br><br>
-	</div>
-</form>
+<div>
+	Enter an integer, 1, 2, or 3 for the type of list desired.
+	<form name="formList" id="formList">
+		<input type="text" name="choice" id="choice"><br><br>
+	</form>
+	<input type="button" onclick="lists()" value="Submit">
+	<input type="reset" value="Reset"><br><br>
+</div>
 
-<div id="outputMessage"></div>
-<br><br>
+<div id="dialog">
+	<p>Input 1, 2, or 3 for the type of list desired.<br>
+	1 - unordered list<br>
+	2 - ordered list<br>
+	3 - ordered letter list</p>
+</div>
+
+<div id="outputList"></div>
 
 <footer>
 	<p>
