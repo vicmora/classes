@@ -42,6 +42,80 @@
 
 <h1>CNIT 133 Homework 5 - Part 2</h1>
 
+<div>
+	<br>
+	<button id="opener">Click for Instructions</button>
+	<br><br>
+</div>
+<div id="dialog">
+	<p>Enter a state abbreviation or name (lower or upper case is ok).</p>
+</div>
+
+<table>
+	<thead>
+		<tr>
+			<th>State Abbreviation</th>
+			<th>State Name</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>AL</td>
+			<td>Alabama</td>
+		</tr>
+		<tr>
+			<td>AK</td>
+			<td>Alaska</td>
+		</tr>
+		<tr>
+			<td>AZ</td>
+			<td>Arizona</td>
+		</tr>
+		<tr>
+			<td>AR</td>
+			<td>Arkansas</td>
+		</tr>
+		<tr>
+			<td>CA</td>
+			<td>California</td>
+		</tr>
+		<tr>
+			<td>CO</td>
+			<td>Colorado</td>
+		</tr>
+	</tbody>
+</table>
+
+<form name="stateForm">
+	<table>
+		<tbody>
+			<tr>
+				<td>Enter State:</td>
+				<td><input type="text" name="inState"></td>
+			</tr>
+						<tr>
+				<td>State Name:</td>
+				<td><input type="text" name="outStateName" disabled></td>
+			</tr>
+						<tr>
+				<td>State Capital:</td>
+				<td><input type="text" name="outStateCapital" disabled></td>
+			</tr>
+						<tr>
+				<td>Population:</td>
+				<td><input type="text" name="outPopulation" disabled></td>
+			</tr>
+			
+		</tbody>
+	</table>
+
+	<div>
+		<input type="button" onclick="part2()" value="State Info">
+		<input type="reset" value="Reset"><br><br>
+	</div>
+
+</form>
+
 <footer>
 	<p>
 		<a href="https://validator.w3.org/check?uri=referer" target="_blank">
