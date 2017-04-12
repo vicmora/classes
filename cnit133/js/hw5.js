@@ -152,6 +152,29 @@ function part3() {
         arr[8] += 1;
         document.getElementById('outTen').innerHTML = arr[8];
     }
+};
 
+
+var numbersArr = [];
+var unique = [];
+function part4() {
+    var frm = document.forms['numberForm'];
+    var inNumber = parseFloat(frm.elements['inNumber'].value);
+    var msg;
+
+    if(!(inNumber >= 10 && inNumber <= 100)) {
+        msg = 'ERROR: Please enter a number between 10 and 100';
+    } else {
+        if(unique.indexOf(inNumber) === -1) {
+            unique.push(inNumber);
+        }
+        numbersArr.push(inNumber);
+
+        msg = 'Count: '+numbersArr.length+'\n\n'
+              +'Unique numbers entered: '+unique.join(', ')+'\n\n'
+              +'Numbers entered: '+numbersArr.join(', ');
+    }
+
+    document.getElementById('results').innerHTML = msg;
 
 };
