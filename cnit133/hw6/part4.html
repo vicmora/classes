@@ -1,8 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>CNIT 133 Homework 6 - Objects</title>
+	<title>CNIT 133 Homework 6 - Part 4</title>
 	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.11.1/themes/smoothness/jquery-ui.css">
+	<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.11.1/jquery-ui.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.10/jquery.mask.js"></script>
+	<script type="text/javascript" src="../js/hw6.js"></script>
 </head>
 <body>
 
@@ -33,51 +38,27 @@
 	</table>
 </nav>
 
-<h1>CNIT 133 Homework 6 - Objects</h1>
-<table>
-	<thead>
-		<tr>
-			<th>Parts</th>
-			<th>Summary</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td>
-				<a href="part1.html">Part 1</a>
-			</td>
-			<td>
-				Enter a number and display different rounding methods as well as
-				find the square root of the number.
-			</td>
-		</tr>
-		<tr>
-			<td>
-				<a href="part2.html">Part 2</a>
-			</td>
-			<td>
-				Search for characters in a string.
-			</td>
-		</tr>
-		<tr>
-			<td>
-				<a href="part3.html">Part 3</a>
-			</td>
-			<td>
-				Represent date and time in different formats.
-			</td>
-		</tr>
-		<tr>
-			<td>
-				<a href="part4.html">Part 4</a>
-			</td>
-			<td>
-				Determine the total number of occurences of each letter
-				in text input.
-			</td>
-		</tr>
-	</tbody>	
-</table>
+<h1>CNIT 133 Homework 6 - Part 4</h1>
+
+<form name="frm">
+	<table>
+		<thead>
+			<tr>
+				<th>Enter text:</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td><textarea id="inText" rows="10" cols="40"></textarea></td>
+			</tr>
+		</tbody>
+	</table>
+	<div>
+		<input type="button" onclick="part4()" value="Submit">
+		<input type="reset" value="Reset"><br><br>
+		<textarea id="results" rows="30" cols="10"></textarea><br><br>
+	</div>
+</form>
 
 <footer>
 	<p>
