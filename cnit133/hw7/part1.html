@@ -7,7 +7,7 @@
 	<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
 	<script src="https://code.jquery.com/ui/1.11.1/jquery-ui.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.10/jquery.mask.js"></script>
-	<script type="text/javascript" src="../js/hw6.js"></script>
+	<script type="text/javascript" src="../js/hw7.js"></script>
 </head>
 <body>
 
@@ -40,25 +40,77 @@
 
 <h1>CNIT 133 Homework 6 - Part 1</h1>
 
-<form name="numForm">
-	<table>
+<form name="themeForm">
+	<table id="themeTable">
 		<thead>
 			<tr>
-				<th>Enter a number:</th>
+				<th>Class</th>
 			</tr>
 		</thead>
 		<tbody>
 			<tr>
-				<td><input type="text" name="inNum"></td>
+				<td>
+					<label><input type="radio" name="cls" value="class1">Class 1</label><br>
+					<label><input type="radio" name="cls" value="class2">Class 2</label><br>
+					<label><input type="radio" name="cls" value="class3">Class 3</label><br>
+					<label><input type="radio" name="cls" value="none">None</label>
+				</td>
 			</tr>
 		</tbody>
 	</table>
-	<div>
-		<input type="button" onclick="part1()" value="Submit">
-		<input type="reset" value="Reset"><br><br>
-		<textarea id="results" rows="10" cols="40"></textarea><br><br>
-	</div>
 </form>
+
+<form name="inputForm">
+	<table id="inputTable">
+		<thead>
+			<tr>
+				<th>Background Color</th>
+				<th>Font</th>
+				<th>Font Size</th>
+				<th>Font Style</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<label><input type="radio" name="background-color" value="#F2F2F2"> Default</label><br>
+					<label><input type="radio" name="background-color" value="red"> Red</label><br>
+					<label><input type="radio" name="background-color" value="green"> Green</label><br>
+					<label><input type="radio" name="background-color" value="blue"> Blue</label>
+				</td>
+				<td>
+					<label><input type="radio" name="font-family" value="arial"> Arial</label><br>
+					<label><input type="radio" name="font-family" value="impact"> Impact</label><br>
+					<label><input type="radio" name="font-family" value="tahoma"> Tahoma</label><br>
+					<label><input type="radio" name="font-family" value="verdana"> Verdana</label><br>
+				</td>
+				<td>
+					<select size="4" name="font-size" id="fontSize">
+						<option value="12px">12px</option>
+						<option value="20px" selected>20px</option>
+						<option value="30px">30px</option>
+						<option value="40px">40px</option>
+					</select>
+				</td>
+				<td>
+					<label><input type="checkbox" name="font-weight" value="bold"> Bold</label><br>
+					<label><input type="checkbox" name="font-style" value="italic"> Italic</label><br>
+					<label><input type="checkbox" name="text-decoration" value="line-through"> Strikethrough</label><br>
+					<label><input type="checkbox" name="font-variant" value="small-caps"> Small-Caps</label><br>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</form>
+
+<div id="summary">
+	<p>
+		jQuery is a fast, small, and feature-rich JavaScript library. It makes things like HTML document
+		traversal and manipulation, event handling, animation, and Ajax much simpler with an easy-to-use
+		API that works across a multitude of browsers. With a combination of versatility and extensibility,
+		jQuery has changed the way that millions of people write JavaScript.
+	</p>
+</div><br><br>
 
 <footer>
 	<p>

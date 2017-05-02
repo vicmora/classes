@@ -99,3 +99,24 @@ footer {
 	display: block;
 	margin: auto;
 }
+
+.class1 {
+	font-family: Arial;
+	font-color: black;
+	font-size: 20px;
+	background-color: pink;
+}
+
+.class2 {
+	font-family: Impact;
+	font-size: 25px;
+	font-color: white;
+	background-color: orange;
+}
+
+.class3 {
+	font-family: Verdana;
+	font-color: white;
+	font-size: 30px;
+	background-color: red;
+}
