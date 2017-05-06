@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>CNIT 133 Homework 6 - Part 2</title>
+	<title>CNIT 133 Homework 7 - Part 2</title>
 	<link rel="stylesheet" type="text/css" href="../css/style.css">
 	<link rel="stylesheet" href="https://code.jquery.com/ui/1.11.1/themes/smoothness/jquery-ui.css">
 	<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
 	<script src="https://code.jquery.com/ui/1.11.1/jquery-ui.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.10/jquery.mask.js"></script>
-	<script type="text/javascript" src="../js/hw6.js"></script>
+	<script type="text/javascript" src="../js/hw7.js"></script>
 </head>
 <body>
 
@@ -19,7 +19,7 @@
 					<a href="../index.html">Home</a>
 				</td>
 				<td>
-					<a href="index.html">HW 6 Home</a>
+					<a href="index.html">HW 7 Home</a>
 				</td>
 				<td>
 					<a href="part1.html">Part 1</a>
@@ -38,31 +38,27 @@
 	</table>
 </nav>
 
-<h1>CNIT 133 Homework 6 - Part 2</h1>
+<div id="login">
+	<p id="open">Press to Login</p>
+	<form name="passForm">
+		<p>
+			<label for="username">Username:</label>
+			<input type="text" name="username" id="username">
+		</p>
+		<p>
+			<label for="password">Password: </label>
+			<input type="password" name="password" id="password">
+		</p>
+		<p>
+			<input type="button" name="button" id="button" value="Submit" onclick="checkPassword()">
+			<input type="reset" value="Reset" onclick="res()">
+			<!-- <input type="submit" name="button" id="button" value="Submit" onclick="checkPassword()"> -->
+		</p>
+		<div id="message"></div>
+	</form>
+</div>
 
-<form name="frm">
-	<table>
-		<thead>
-			<tr>
-				<th colspan="2">Enter text:</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr>
-				<td colspan="2"><textarea id="inText" rows="10" cols="40"></textarea></td>
-			</tr>
-			<tr>
-				<td>Search Character:</td>
-				<td><input type="text" name="searchChar"></td>
-			</tr>
-		</tbody>
-	</table>
-	<div>
-		<input type="button" onclick="part2()" value="Submit">
-		<input type="reset" value="Reset"><br><br>
-		<textarea id="results" rows="10" cols="40"></textarea><br><br>
-	</div>
-</form>
+<br><br>
 
 <footer>
 	<p>
