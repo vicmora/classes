@@ -120,3 +120,99 @@ footer {
 	font-size: 30px;
 	background-color: red;
 }
+
+#login {
+	width: 300px;
+	position: absolute;
+	left: 60%;
+	top: 6px;
+}
+
+#open {
+	margin: 0px;
+	cursor: pointer;
+	background-color: #FFFFFF;
+	color: #003594;
+	padding: 5px;
+	box-shadow: 0px 5px 5px 5px #888888;
+}
+
+#login .close {
+	background-color: #003594;
+	color: #FFFFFF;
+}
+
+#open:hover {
+	background-color: #003594;
+	color: #FFFFFF;
+}
+
+#login form {
+	margin-top: 10px;
+	padding: 10px 10px 10px 10px;
+	display: none; 
+	background-color: #FFFFFF;
+	position: absolute;
+	z-index: 1;
+	box-shadow: 0px 5px 5px 5px #888888;
+}
+
+#login label {
+	display: inline-block;
+	width: 100px;
+	text-align: right;
+	margin: 0 15px 0 0;
+	color: #003594;
+}
+
+#login input {
+	font-size: 14px;	 
+}
+
+.stopSign {
+	display: inline-block;
+	border: 3px solid #000000;
+	border-radius: 75px;
+	width: 150px;
+	height: 150px;
+	text-align: center;
+	line-height: 150px;
+}
+
+#stop:hover {
+	background-color: red;
+}
+
+#caution:hover {
+	background-color: yellow;
+}
+
+#go:hover {
+	background-color: green;
+}
+
+#nav ul, #nav li {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+#nav a {
+	background-color: #FFFFFF;
+	text-decoration: none;
+	font: 16px 'ColaborateLightRegular', Arial, sans-serif;
+	border-top: 1px solid #ccc;
+	border-left:1px solid #ccc;
+	border-right:1px solid #999;
+	border-bottom:1px solid #999;
+	margin: 0px;
+	padding: 0px;
+	color: #003594;
+}
+#nav a:hover {
+	border-top:1px solid #999;
+	border-left:1px solid #999;
+	border-right:1px solid #ccc;
+	border-bottom:1px solid #ccc;
+	background-color: #003594;
+	color: white;
+}
