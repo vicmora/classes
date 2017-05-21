@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CNIT 133 Homework 8 - Part 4</title>
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script type="text/javascript" src="../js/hw8.js"></script>
+</head>
+<body>
+
+<nav>
+	<table id="navigation">
+		<tbody>
+			<tr>
+				<td>
+					<a href="../index.html">Home</a>
+				</td>
+				<td>
+					<a href="index.html">HW 8 Home</a>
+				</td>
+				<td>
+					<a href="part1.html">Part 1</a>
+				</td>
+				<td>
+					<a href="part2.html">Part 2</a>
+				</td>
+				<td>
+					<a href="part3.html">Part 3</a>
+				</td>
+				<td>
+					<a href="part4.html">Part 4</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</nav>
+
+<h1>CNIT 133 Homework 8 - Part 4</h1>
+
+<form name="stateForm">
+    <table>
+    	<thead>
+    		<tr>
+    			<th colspan="2">Enter state code</th>
+    		</tr>
+    	</thead>
+        <tbody>
+	        <tr>
+	            <td>State Code:</td>
+	            <td><input type="text" onblur="getState(this.value)" name="stateCode" size="30" autofocus></td>
+	        </tr>
+	        <tr>
+	            <td>State Name:</td>
+	            <td><input type="text" name="stateName" size="30" readonly="readonly"></td>
+	        </tr>
+	        <tr>
+	            <td>State Capital:</td>
+	            <td><input type="text" name="stateCapital" size="30" readonly="readonly"></td>
+	        </tr>
+	        <tr>
+	            <td>State Population:</td>
+	            <td><input type="text" name="statePop" size="30" readonly="readonly"></td>
+	        </tr>
+    	</tbody>
+    </table>
+    <div>
+        <input type="reset" value="Reset" onclick="window.location.reload();">
+    </div>
+</form>
+
+<footer>
+	<p>
+		<a href="https://validator.w3.org/check?uri=referer" target="_blank">
+			<img style="border:0;width:29px;height:35px"
+				src="../img/html5a.jpg"
+				alt="HTML5">
+		</a>
+	</p>
+
+	<p>
+	    <a href="https://jigsaw.w3.org/css-validator/check/referer" target="_blank">
+	        <img style="border:0;width:88px;height:31px"
+	            src="https://jigsaw.w3.org/css-validator/images/vcss"
+	            alt="Valid CSS!" />
+	    </a>
+	</p>
+</footer>
+
+</body>
+</html>
